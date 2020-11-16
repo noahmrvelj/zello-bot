@@ -1,0 +1,15 @@
+COINFLIP 1V1 ZBUCKS GAME PSEUDOCODE
+
+command to initiate game should be: !coinflip -[enter amount here, range 0 to +100000]
+once a user initiates a game bot should reply with a message confirming entry to game and notify other users there is an open game for X amount of zbucks
+in the same message bot should also start a countdown timer for 5 minutes for a user to join game otherwise game expires and original user is refunded zbucks
+if a countdown timer with live time is not possible then a new bot reminder msg should be sent every minute updating time remaining then 30 seconds then 15 then 10 then 5 seconds
+
+other user should join coinflip with command: !coinflip -[enter username or @ of persons room they would like to join]
+bot should return a msg confirming join of coinflip room
+bot should countdown from 5 or 3 seconds to decide game winner
+bot should randomly choose a winner (50/50 odds) and then announce it with a congratulatory message and picture of winners PFP
+bot should return winners zbucks and the zbucks they won, confirm loser lost their zbucks
+
+this game could also be expanded to a "coinflip" type game but instead of a 1v1 it could be expanded to a 1v1v1, 1v1v1v1, etc
+same pseudocode but bot should wait until correct number of players joins the game for however many players it requires, and also adjust the odds accordingly
